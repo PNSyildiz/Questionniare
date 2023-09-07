@@ -1,0 +1,250 @@
+:root {
+  --primary-color : #000;
+  --secondary-color :#0656ec;
+  --back-color: #fff;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.sidebar {
+  width: 250px;
+  background-color: var(--primary-color);
+  color: var(--back-color);
+  padding: 20px;
+  height: 800px;
+  display: flex;
+  position: fixed;
+
+}
+.sidebar .nav{
+  margin-top: 200px;
+  margin-left: -150px;
+  display: flex;
+  flex-direction: column;
+  
+}
+ .nav  .Button {
+color: var(--secondary-color);
+border :solid var(--secondary-color);
+margin-top: 20px;
+padding: 15px ;
+border-radius: 50px;
+width: 160px;
+height:20px;
+text-decoration: none;
+text-align: center;
+display: flex;
+justify-content:center;
+}
+
+.Button:hover{
+  border: solid #000000;
+  color: #fff;
+  background-color: #0656ec;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 150px;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+ 
+}
+.dashboard {
+  background-image: url('./Assets/Michael.jpg');
+  z-index: -1;
+  height: 602px;
+  width: auto;
+}
+
+
+.icons{
+  margin-top: 500px;
+  color: #0656ec;
+}
+
+.column {
+   display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+.cards{
+  display: flex;
+  flex-direction:row;
+  margin-top: 100px;
+  margin-left: -200px;
+}
+.cards h1{
+  border: none;
+}
+.Title {
+  width: 600px;
+  height: 100px;
+  border-radius: 20%;
+  margin-left: -200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 40px;
+}
+
+ .Title h1 {
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 40px;
+  color: #ffff;
+}
+
+.Card{
+display: flex;
+flex-direction: column;
+padding-left: 30px;
+justify-content: center;
+  background-color: var(--primary-color);
+  margin-left: 10px;
+  color: #0656ec;
+  box-shadow: #2f2d2d;
+  border: solid #0656ec;
+  border-radius: 20px;
+  height: 200px;
+  width: 200px;
+}
+.quest {
+  color: var(--back-color);
+  border: solid var(--secondary-color);
+  background-color: var(--primary-color);
+  height: auto;
+}
+.Aquestion{
+  border: solid var(--secondary-color) 1px;
+  background-color: #000000;
+  padding: 10px;
+
+}
+
+.btn {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin-left: 10px;
+}
+.Questionniare{
+  background-image: url('./Assets/Michael.jpg');
+  z-index: -1;
+  height: 602px;
+  width: auto;
+}
+.QsWithRatings{
+  margin-top: 200px;
+}
+.question{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+margin-left: 1px;
+color:  var(--back-color);
+border: solid var(--secondary-color);
+padding: 90px;
+background-color:  var(--primary-color);
+}
+.question h1{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: left;
+}
+
+.radio-question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 650px;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  border: solid var(--secondary-color);
+  color: var(--back-color);
+}
+
+
+.questions{
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 30px;
+  padding: 5%;
+  width: 100px;
+}
+
+.label{
+ display: flex;
+ flex-direction: row;
+ margin-left: 20px;
+}
+
+
+
+.Create {
+  background-image: url('./Assets/Michael.jpg');
+  z-index: -1;
+  height: 607px; 
+}
+.questionniare {
+  background-image: url('./Assets/Michael.jpg');
+  z-index: -1;
+  height: 607px; 
+}
+
+
+.submit {
+  background-color: var(--primary-color);
+  color: #0656ec;
+border :solid #0656ec;
+margin-top: 20px;
+padding: 15px ;
+border-radius: 50px;
+width: 160px;
+height: 50px;
+text-align: center;
+display: flex;
+justify-content:center;
+}
+.radio-group {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 100px;
+}

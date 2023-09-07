@@ -1,0 +1,30 @@
+{
+  "questions": [
+    {
+      "text": "How does it work",
+      "id": 7
+    },
+    {
+      "text": "Ohh but it does, Haha?",
+      "id": 9
+    }
+  ],
+  "RatedQuestions": [
+    {
+      "id":1,
+      "text": "How does it work"
+    },
+    {
+      "id": 2,
+      "text": "How does it work"
+    },
+    {
+      "id": 3,
+      "text": "How does it work"
+    },
+    {
+      "id": 4,
+      "text": "How does it work"
+    }
+  ]
+}
