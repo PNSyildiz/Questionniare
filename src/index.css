@@ -79,8 +79,10 @@ justify-content:center;
 }
 .dashboard {
   background-image: url('./Assets/Michael.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
-  height: 602px;
+  height: 620px;
   width: auto;
 }
 
@@ -160,16 +162,17 @@ justify-content: center;
 }
 .Questionniare{
   background-image: url('./Assets/Michael.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
-  height: 602px;
+  height: 620px;
   width: auto;
 }
 .QsWithRatings{
   margin-top: 200px;
 }
 .question{
-  display: flex;
-  flex-direction: row;
+  width: 300px;
   margin-top: 10px;
 margin-left: 1px;
 color:  var(--back-color);
@@ -180,7 +183,7 @@ background-color:  var(--primary-color);
 .question h1{
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 12x;
   justify-content: left;
 }
 
@@ -219,13 +222,19 @@ background-color:  var(--primary-color);
 
 .Create {
   background-image: url('./Assets/Michael.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
-  height: 607px; 
+  height: 620px;
+  width: auto;
 }
 .questionniare {
   background-image: url('./Assets/Michael.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
-  height: 607px; 
+  height: 620px;
+  width: auto; 
 }
 
 

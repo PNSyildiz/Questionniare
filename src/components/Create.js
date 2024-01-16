@@ -13,15 +13,15 @@ const getQuestions = async () =>{
   const questionsFromServer =await fetchQuestions()
   setQuestions(questionsFromServer)
 }
-  getQuestions(questions)
+  getQuestions()
 }, [])
 
 //fetch questions from db
 const fetchQuestions =async () =>{
   const res = await fetch('http://localhost:5000/questions')
-  const data =await res.json()
+  const questions =await res.json()
 
-  return data
+  return questions;
 }
 
 
