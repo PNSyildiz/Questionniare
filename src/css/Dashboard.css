@@ -1,0 +1,42 @@
+
+.dashboard {
+    background-image: url(../Assets/Michael.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 620px;
+    width: auto;
+  }
+  
+.Title {
+    width: 600px;
+    height: 100px;
+    border-radius: 20%;
+    margin-left: -200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+  }
+  
+   .Title h1 {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 40px;
+    color: #ffff;
+  }
+  
+  .Card{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  justify-content: center;
+    background-color: var(--primary-color);
+    margin-left: 10px;
+    color: #0656ec;
+    box-shadow: #2f2d2d;
+    border: solid #0656ec;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+  }
