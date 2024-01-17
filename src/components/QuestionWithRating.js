@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const QuestionWithRating = ({ data, onUpdateRating }) => {
+const QuestionWithRating = ({ questions, onUpdateRating }) => {
   const [selectedOption, setSelectedOption] = useState('Neutral'); // Default to Neutral
 
   const handleOptionChange = (event) => {
@@ -10,7 +10,7 @@ const QuestionWithRating = ({ data, onUpdateRating }) => {
 
   return (
     <div className="radio-question">
-      <h1>{data}</h1>
+      <h3>{questions}</h3>
       <div className="radio-group">
         <label>
           <input
@@ -45,33 +45,37 @@ const QuestionWithRating = ({ data, onUpdateRating }) => {
 };
 
 const QuestionsList = () => {
-  // const [questions, setQuestions] = useState([]);
+  const [questions, setQuestions] = useState([]);
 
   
-  // useEffect(() => {
-  //   const getQuestions = async () => {
-  //     const questionsFromServer = await fetchQuestions();
-  //     setQuestions(questionsFromServer);
-  //   };
+  useEffect(() => {
+    const getQuestions = async () => {
+      const questionsFromServer = await fetchQuestions();
+      setQuestions(questionsFromServer);
+    };
 
-  //   getQuestions();
-  // }, []);
+    getQuestions();
+  }, []);
 
   // Fetch questions from db
-
+  const fetchQuestions =async () =>{
+    const res = await fetch('http://localhost:5000/RatedQuestions')
+    const questions =await res.json()
+  
+    return questions;
+  }
 
   return (
     <div>
-      {/* {questions.map((questionData) => (
-        <QuestionWithRating
-          key={questionData.id} // Make sure to use a unique key for each question
-          question={questionData.question}
+      {questions.map((questions) => (
+        <QuestionWithRating // Make sure to use a unique key for each question
+         key={questions.id} questions={questions.text}
           onUpdateRating={(rating) => {
             // Handle the rating update here if needed
-            console.log(`Question: ${questionData.question}, Rating: ${rating}`);
+            console.log(`Question: ${questions.question}, Rating: ${rating}`);
           }}
         />
-      ))} */}
+      ))}
     </div>
   );
 };
