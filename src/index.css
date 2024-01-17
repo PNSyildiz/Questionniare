@@ -108,6 +108,10 @@ justify-content:center;
 .cards h1{
   border: none;
 }
+
+.cards h3{
+  color: #fff;
+}
 .Title {
   width: 600px;
   height: 100px;

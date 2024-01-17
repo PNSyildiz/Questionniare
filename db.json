@@ -11,6 +11,10 @@
     {
       "text": "What question to create?",
       "id": 10
+    },
+    {
+      "text": "Hey, whats the question?",
+      "id": 11
     }
   ],
   "RatedQuestions": [
@@ -20,15 +24,19 @@
     },
     {
       "id": 2,
-      "text": "How does it work"
+      "text": "How do I get all the questions?"
     },
     {
       "id": 3,
-      "text": "How does it work"
+      "text": "Can I get them one by one ?"
     },
     {
       "id": 4,
-      "text": "How does it work"
+      "text": "I am sure it should work"
+    },
+    {
+      "text": "Hey, whats the question?",
+      "id": 11
     }
   ]
 }
