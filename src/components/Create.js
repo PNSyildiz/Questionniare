@@ -18,15 +18,15 @@ const getQuestions = async () =>{
 
 //fetch questions from db
 const fetchQuestions =async () =>{
-  const res = await fetch('http://localhost:5000/questions')
+  const res = await fetch('http://localhost:8080/AllQuestions')
   const questions =await res.json()
-
+ console.log(questions)
   return questions;
 }
 
 
 const addQuestion = async (question) =>{
-const res = await fetch(`http://localhost:5000/questions`,{
+const res = await fetch(`http://localhost:8080/AddQuestion`,{
   method: 'POST',
   headers:{
     'content-type': 'application/json'
@@ -45,19 +45,19 @@ setQuestions([...questions, data])
 }
 
 //delete member
-const deleteQuestion = async (id) => {
-await fetch(`http://localhost:5000/questions/${id}`, {
+const deleteQuestion = async (questionId) => {
+await fetch(`http://localhost:8080/Delete/${questionId}`{
   method: 'DELETE'
 })
   // Use the filter method to create a new array without the question to be deleted
-  const updatedQuestions = questions.filter((question) => question.id !== id);
+  const updatedQuestions = questions.filter((question) => question.questionId !== questionId);
   setQuestions(updatedQuestions);
 };
 
   return (
     <div className='Create'>
       <Sidebar >
-        <QuestionAdd onAdd={addQuestion}/>
+        <wQuestionAdd onAdd={addQuestion}/>
         <Questions  questions={questions} onDelete={deleteQuestion}/>
         
         

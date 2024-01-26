@@ -1,0 +1,32 @@
+
+
+  .Questionniare{
+    background-image: url('../Assets/Michael.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 620px;
+    width: auto;
+  }
+  .QsWithRatings{
+    margin-top: 100px;
+  }
+  .Questionniare h1{
+    color: aliceblue;
+    padding: 10px;
+    margin-left: 60px;
+  }
+
+  .radio-question {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 650px;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    border: solid var(--secondary-color);
+    color: var(--back-color);
+  }

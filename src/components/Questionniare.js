@@ -7,6 +7,7 @@ const Questionniare = () => {
     <div className='Questionniare'>
       {}
           <Sidebar>
+            <h1>Rate These Questions</h1>
         <div className='QsWithRatings'>
         <QuestionWithRating />
         </div>

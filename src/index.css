@@ -1,4 +1,6 @@
 @import url(./css/Dashboard.css);
+@import url(./css/Questionniare.css);
+@import url(./css/Create.css);
 
 :root {
   --primary-color : #000;
@@ -84,6 +86,7 @@ justify-content:center;
 
 .icons{
   margin-top: 500px;
+  padding: 10px;
   color: #0656ec;
 }
 
@@ -108,18 +111,6 @@ justify-content:center;
   color: #fff;
 }
 
-.quest {
-  color: var(--back-color);
-  border: solid var(--secondary-color);
-  background-color: var(--primary-color);
-  height: auto;
-}
-.Aquestion{
-  border: solid var(--secondary-color) 1px;
-  background-color: #000000;
-  padding: 10px;
-
-}
 
 .btn {
   margin-top: 100px;
@@ -128,57 +119,6 @@ justify-content:center;
   justify-content:center;
   margin-left: 10px;
 }
-.Questionniare{
-  background-image: url('./Assets/Michael.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  height: 620px;
-  width: auto;
-}
-.QsWithRatings{
-  margin-top: 200px;
-}
-.question{
-  width: 300px;
-  margin-top: 10px;
-margin-left: 1px;
-color:  var(--back-color);
-border: solid var(--secondary-color);
-padding: 90px;
-background-color:  var(--primary-color);
-}
-.question h1{
-  display: flex;
-  flex-direction: row;
-  padding: 12x;
-  justify-content: left;
-}
-
-.radio-question {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: -30px;
-  margin-top: 10px;
-  padding: 10px;
-  width: 650px;
-  justify-content: space-around;
-  background-color: var(--primary-color);
-  border: solid var(--secondary-color);
-  color: var(--back-color);
-}
-
-
-.questions{
-  border-radius: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 30px;
-  padding: 5%;
-  width: 100px;
-}
 
 .label{
  display: flex;
@@ -186,39 +126,6 @@ background-color:  var(--primary-color);
  margin-left: 20px;
 }
 
-
-
-.Create {
-  background-image: url('./Assets/Michael.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  height: 620px;
-  width: auto;
-}
-.questionniare {
-  background-image: url('./Assets/Michael.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  height: 620px;
-  width: auto; 
-}
-
-
-.submit {
-  background-color: var(--primary-color);
-  color: #0656ec;
-border :solid #0656ec;
-margin-top: 20px;
-padding: 15px ;
-border-radius: 50px;
-width: 160px;
-height: 50px;
-text-align: center;
-display: flex;
-justify-content:center;
-}
 .radio-group {
   display:flex;
   flex-direction: row;

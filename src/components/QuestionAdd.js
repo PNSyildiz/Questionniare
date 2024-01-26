@@ -23,11 +23,12 @@ const QuestionAdd = ({ onAdd }) => {
           <h3>Question:</h3>
         </label>
         <input
+        className='input'
           type='text'
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button className='submit' type='submit'>ADD</button>
+        <button className='submit' type='submit'>SAVE</button>
       </form>
     </div>
   );

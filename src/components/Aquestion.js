@@ -14,7 +14,7 @@ const Aquestion = ({ question, onDelete }) => {
   };
 
   const handleSaveClick = () => {
-    fetch(`http://localhost:5000/questions/${question.id}`, {
+    fetch(`http://localhost:8080/UpdateQuestion/${question.questionId}`, {
       method: "PUT", // Use the appropriate HTTP method (e.g., PUT or PATCH).
       headers: {
         "Content-Type": "application/json",
@@ -44,7 +44,7 @@ const Aquestion = ({ question, onDelete }) => {
       ) : (
         <h3>
           {editedText} <FaEdit onClick={handleEditClick} />{" "}
-          <FaTimes onClick={() => onDelete(question.id)} />
+          <FaTimes onClick={() => onDelete(question.questionId)} />
         </h3>
       )}
     </div>

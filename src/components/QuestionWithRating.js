@@ -17,7 +17,7 @@ const QuestionWithRating = ({ questions, onUpdateRating }) => {
             type="radio"
             value="Agree"
             checked={selectedOption === 'Agree'}
-            onChange={handleOptionChange}
+            onChange={(e) => handleOptionChange(e)}
           />
           Agree
         </label>
@@ -59,9 +59,9 @@ const QuestionsList = () => {
 
   // Fetch questions from db
   const fetchQuestions =async () =>{
-    const res = await fetch('http://localhost:5000/RatedQuestions')
+    const res = await fetch('http://localhost:8080/AllQuestions')
     const questions =await res.json()
-  
+   console.log(questions);
     return questions;
   }
 
@@ -69,7 +69,7 @@ const QuestionsList = () => {
     <div>
       {questions.map((questions) => (
         <QuestionWithRating // Make sure to use a unique key for each question
-         key={questions.id} questions={questions.text}
+         key={questions.question_id} questions={questions.question}
           onUpdateRating={(rating) => {
             // Handle the rating update here if needed
             console.log(`Question: ${questions.question}, Rating: ${rating}`);

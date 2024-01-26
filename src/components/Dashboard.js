@@ -21,8 +21,8 @@ setQuestions(questionsFromServer)
 }, [])
 // fetch questions from db
 const fetchQuestions =async () =>{
-  const res = await fetch('http://localhost:5000/Questions')
-  const questionData =await res.json()
+  const res = await fetch(`http://localhost:8080/AllQuestions`)
+  const questionData = await res.json()
 console.log(questionData)
 return questionData
 }
@@ -55,7 +55,7 @@ return questionData
         
         <div className='cards'>
           <Card text={"Number of questions"} number={questionData.length}/>
-          <Card text={"Agreements"} number={questionData.indexOf.length}/>
+          <Card text={"Agreements"} number={questionData.length}/>
           <Card text={"Disagreements"} number={questionData.indexOf.length}/>
           <Card text={"Neutral"} number={"3"}/>
           {/*

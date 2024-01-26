@@ -1,0 +1,77 @@
+
+.Create {
+    background-image: url('../Assets/Michael.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 620px;
+    width: auto;
+  }
+  
+  .submit {
+    background-color: var(--primary-color);
+    color: #0656ec;
+  border :solid #3269ce;
+  margin-top: 20px;
+  margin-left: 12rem;
+  padding: 15px ;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  }
+  
+.quest {
+    color: var(--back-color);
+    border:1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    height: auto;
+  }
+  .Aquestion{
+    border: solid var(--secondary-color) 1px;
+    background-color: #000000;
+    padding: 10px;
+  
+  }
+
+  .question{
+    width: 300px;
+    margin-top: 10px;
+  margin-left: 1px;
+  color:  var(--back-color);
+  border: 1px solid var(--secondary-color);
+  padding: 70px;
+  background-color:  var(--primary-color);
+  }
+  .question h1{
+    display: flex;
+    flex-direction: row;
+    padding: 12x;
+    justify-content: left;
+  }
+
+  .questions{
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+    padding: 5%;
+    width: 100px;
+  }
+
+  .input{
+    padding: 5px;
+    margin: 5px;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    height: 2rem;
+    width: 17rem;
+    border-radius: 10%;
+  }
+
+  .form h1{
+    padding :112rem;
+  }

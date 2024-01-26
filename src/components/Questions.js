@@ -4,9 +4,9 @@ const Questions = ({questions, onDelete}) => {
   return (
     
    <div className="quest">
-   {questions.map((question) =>{
+   {questions.map((questions) =>{
      return (
-       <Aquestion key={question.id} question={question} onDelete={onDelete} />)
+       <Aquestion key={questions.questionId} question={questions.question} onDelete={onDelete} />)
    })}
    </div>
   )
