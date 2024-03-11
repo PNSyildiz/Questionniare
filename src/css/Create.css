@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    height: 620px;
+    height: 930px;
     width: auto;
   }
   
@@ -33,11 +33,14 @@
     border: solid var(--secondary-color) 1px;
     background-color: #000000;
     padding: 10px;
-  
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .question{
-    width: 300px;
+    width: 380px;
     margin-top: 10px;
   margin-left: 1px;
   color:  var(--back-color);

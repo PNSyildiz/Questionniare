@@ -6,8 +6,11 @@ const Questions = ({questions, onDelete}) => {
    <div className="quest">
    {questions.map((questions) =>{
      return (
-       <Aquestion key={questions.questionId} question={questions.question} onDelete={onDelete} />)
+       <Aquestion key={questions.questionId}  
+       questiong={questions.genre} 
+       question={questions} onDelete={onDelete} />)
    })}
+  
    </div>
   )
 }

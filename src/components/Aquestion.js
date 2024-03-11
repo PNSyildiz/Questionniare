@@ -1,9 +1,9 @@
 import { FaTimes, FaEdit } from "react-icons/fa";
-import { useState } from "react";
+import { useState} from "react";
 
 const Aquestion = ({ question, onDelete }) => {
   const [isEditing, setIsEditing] = useState(false);
-  const [editedText, setEditedText] = useState(question.text);
+  const [editedText, setEditedText] = useState(question.question, question.genre);
 
   const handleEditClick = () => {
     setIsEditing(!isEditing);
@@ -14,12 +14,12 @@ const Aquestion = ({ question, onDelete }) => {
   };
 
   const handleSaveClick = () => {
-    fetch(`http://localhost:8080/UpdateQuestion/${question.questionId}`, {
+    fetch(`http://localhost:8080/AddQuestion/${question.questionId}`, {
       method: "PUT", // Use the appropriate HTTP method (e.g., PUT or PATCH).
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ text: editedText }), // Send the updated question text.
+      body: JSON.stringify({ text: editedText , genre: editedText}), // Send the updated question text.
     })
       .then((response) => {
         if (response.ok) {
@@ -34,9 +34,10 @@ const Aquestion = ({ question, onDelete }) => {
       });
   };
 
+
   return (
     <div className="Aquestion">
-      {isEditing ? (
+    { isEditing ? (
         <div>
           <input type="text" value={editedText} onChange={handleTextChange} />
           <button onClick={handleSaveClick}>Save</button>
@@ -44,7 +45,7 @@ const Aquestion = ({ question, onDelete }) => {
       ) : (
         <h3>
           {editedText} <FaEdit onClick={handleEditClick} />{" "}
-          <FaTimes onClick={() => onDelete(question.questionId)} />
+          <FaTimes onClick={(question) => onDelete(question.questionId)} />
         </h3>
       )}
     </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const QuestionAdd = ({ onAdd }) => {
   const [text, setText] = useState('');
-
+  const [genre, setGenre] =useState('');
   const onSubmit = (e) => {
     e.preventDefault();
 
@@ -10,9 +10,15 @@ const QuestionAdd = ({ onAdd }) => {
       alert('Please add a question');
       return;
     }
+    if (!genre) {
+      alert('Please add a question');
+      return;
+    }
+    
 
-    onAdd({text})
+    onAdd({question: text, genre: genre})
     setText('') 
+    setGenre('');
    };
 
   return (
@@ -23,7 +29,13 @@ const QuestionAdd = ({ onAdd }) => {
           <h3>Question:</h3>
         </label>
         <input
-        className='input'
+        // className='input'
+          type='text'
+          value={genre}
+          onChange={(e) => setGenre(e.target.value)}
+        />
+        <input
+        // className='input'
           type='text'
           value={text}
           onChange={(e) => setText(e.target.value)}

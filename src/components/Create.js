@@ -20,13 +20,14 @@ const getQuestions = async () =>{
 const fetchQuestions =async () =>{
   const res = await fetch('http://localhost:8080/AllQuestions')
   const questions =await res.json()
- console.log(questions)
+//  console.log(questions)
   return questions;
 }
 
 
 const addQuestion = async (question) =>{
-const res = await fetch(`http://localhost:8080/AddQuestion`,{
+
+const res = await fetch('http://localhost:8080/AddQuestion',{
   method: 'POST',
   headers:{
     'content-type': 'application/json'
@@ -46,7 +47,7 @@ setQuestions([...questions, data])
 
 //delete member
 const deleteQuestion = async (questionId) => {
-await fetch(`http://localhost:8080/Delete/${questionId}`,{
+await fetch(`http://locahost:8080/Question/Delete/${questionId}`,{
   method: 'DELETE'
 })
   // Use the filter method to create a new array without the question to be deleted

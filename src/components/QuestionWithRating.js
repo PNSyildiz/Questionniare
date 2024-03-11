@@ -68,7 +68,8 @@ const QuestionsList = () => {
   return (
     <div>
       {questions.map((questions) => (
-        <QuestionWithRating // Make sure to use a unique key for each question
+        <QuestionWithRating 
+        // Make sure to use a unique key for each question
          key={questions.question_id} questions={questions.question}
           onUpdateRating={(rating) => {
             // Handle the rating update here if needed
