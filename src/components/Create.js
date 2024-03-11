@@ -46,7 +46,7 @@ setQuestions([...questions, data])
 
 //delete member
 const deleteQuestion = async (questionId) => {
-await fetch(`http://localhost:8080/Delete/${questionId}`{
+await fetch(`http://localhost:8080/Delete/${questionId}`,{
   method: 'DELETE'
 })
   // Use the filter method to create a new array without the question to be deleted
@@ -57,7 +57,7 @@ await fetch(`http://localhost:8080/Delete/${questionId}`{
   return (
     <div className='Create'>
       <Sidebar >
-        <wQuestionAdd onAdd={addQuestion}/>
+        <QuestionAdd onAdd={addQuestion}/>
         <Questions  questions={questions} onDelete={deleteQuestion}/>
         
         
